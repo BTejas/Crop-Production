@@ -40,21 +40,18 @@ The dataset I took from kaggle.link for the dataset is [here](https://data.world
 ## Results 
 |Algorithm|r2_score|
 |:--:|:--:|
-LinearRegression|0.154716
-DecisionTreeRegressor|	0.972603
-RandomForestRegressor	|0.949165
-Random Forest Regressor with Hyper parameter tuning|	0.448251
-AdaBoostRegressor RandomForest as base model|0.325442
-AdaBoostRegressor DecisionTree as base model|0.280983
-GradientBoostingRegressor	| 0.898286
-GradientBoostingRegressor with GridSearchCV	| 0.932254
-XGboost Regressor|	0.932254
-XGboost Regressor with GridSearchCV	| 0.945544
+LinearRegression|0.226581
+DecisionTreeRegressor|0.923590
+RandomForestRegressor	|0.941825
+AdaBoostRegressor RandomForest as base model|0.593816
+AdaBoostRegressor DecisionTree as base model|0.576665
+GradientBoostingRegressor	|0.938196
+XGboost Regressor|0.941793
 
 ## Conclusion 
 1. Decision Tree Regressor has given the best r2_score but the predictions seems to be grouped
 2. Hence Random Forest is the best model for this problem 
-3. Random Forest has given an r2_score of 94.9 i.e approx 95% 
+3. Random Forest has given an r2_score of 94.18 i.e approx 94% 
 4. All the boosting models have given almost equal score 
 5. Random Forest can be improved further by correct hyper parameter tuning 
 6. Reducing the levels in crop and state has reduced the model performance 
